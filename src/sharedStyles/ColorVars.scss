@@ -1,0 +1,50 @@
+// Colors from Design Guide
+// Primary Colors
+$primary-color: #00416a;
+$primary-color-2: #00a3e0;
+$primary-color-3: #ff5c39; // Not used in the application
+$primary-color-4: #f15635; // Used once in the app
+$error-color: #c72906; // Not used in the application
+$black-color: #3d3935;
+$cool-gray-color: #97999b;
+$warm-gray-color: #f7f5e4;
+
+// Background Colors
+$background-color: #f5f5f5;
+$background-summary-color: #8f9ea8; // Not used in the application
+$background-callout-color: #48a3d3; // Not used in the application
+$background-tooltip-color: #000;
+
+// Other Grays
+$other-gray-color: #64615d;
+$other-gray-color-2: #8b8886;
+$other-gray-color-3: #b1b0ae;
+$other-gray-color-4: #d8d7d7;
+$other-gray-color-5: $background-color; // Not used in the application
+$other-gray-color-6: #f0f2f5; // Not used in the application
+$other-gray-color-7: #fafafa; // Not used in the application
+
+// Toned Blues
+$toned-blue: #3e92d6; // Used once in the app
+$toned-blue-2: #4390b1; // Not used in the application
+$toned-blue-3: #758ba0; // Not used in the application
+
+// Other Colors
+$secondary-color: #7b98ab; // Not used in the application
+$accent-color: #02a0e0; // Not used in the application
+$secondary-background-color: white;
+$nav-border-color: #f0f0f0; // Not used in the application
+$border-color: rgba(0, 0, 0, 0.034); // Not used in the application
+$error-red: #cc2036; // to match Looker components // Not used in the application
+
+// Tooltip Colors
+$tooltip-color: white; // Used once in the app
+$box-shadow-color: rgba(50, 50, 50, 0.1); // Used once in the app
+$box-shadow-color-2: rgba(0, 0, 0, 0.2); // Not used in the application
+
+// Toast Colors
+$toast-spinner-color: #808080;
+
+// Logo Colors
+$logo-primary: #00416b; // Not used in the application
+$logo-secondary: #00a0df; // Not used in the application

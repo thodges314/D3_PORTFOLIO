@@ -1,0 +1,69 @@
+@import '../../../sharedStyles/ColorVars';
+@import '../../../sharedStyles/FontVars';
+
+.relative-spend-wrapper {
+  margin: 0 20px;
+
+  h6 {
+    margin-bottom: 40px;
+  }
+
+  svg.relative-spend-svg {
+    min-width: 364px;
+    margin-left: 2%;
+    width: 100%;
+    height: 300px;
+    overflow: visible;
+
+    .bar:hover {
+      opacity: 0.8;
+    }
+
+    .bau-bar-rect,
+    .opt-bar-rect,
+    .bar-inner-label {
+      animation: fade-in 250ms;
+    }
+
+    .xaxis-label,
+    .bar-top-label {
+      font-size: 12px;
+      font-family: $font-stack;
+      fill: $cool-gray-color;
+      text-anchor: middle;
+    }
+
+    .bar-top-label {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    .bar-inner-label {
+      text-anchor: middle;
+      font-family: $font-stack;
+      fill: $black-color;
+      font-weight: normal;
+      font-size: 12px;
+      user-select: none;
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .bar rect {
+      stroke: white;
+      stroke-width: 0.2px;
+    }
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

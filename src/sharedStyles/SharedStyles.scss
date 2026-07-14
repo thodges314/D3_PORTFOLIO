@@ -1,0 +1,165 @@
+/* --- HEADINGS --- */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 24px;
+}
+
+h1 {
+  font-size: 1.5em; /* 24px --> 24 ÷ 16 = 1.5 */
+  line-height: 1em; /* 24px --> 24 ÷ 24 = 1 */
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 1.375em; /* 22px --> 22 ÷ 16 = 1.375 */
+  line-height: 1.0909em; /* 24px --> 24 ÷ 22 = 1.090909(09) */
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.25em; /* 20px --> 20 ÷ 16 = 1.25 */
+  line-height: 1.2em; /* 24px --> 24 ÷ 20 = 1.2 */
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 1.125em; /* 18px --> 18 ÷ 16 = 1.125 */
+  line-height: 1.333em; /* 24px --> 24 ÷ 18 = 1.3333333(3) */
+  font-weight: bold;
+}
+
+h5,
+h6 {
+  font-size: 1em; /* 16px --> 16 ÷ 16 = 1 */
+  line-height: 1.5em; /* 24px --> 24 ÷ 16 = 1.5 */
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+/* --- PAGES SHARED STYLES --- */
+.page-main-wrapper {
+  .header-container {
+    height: auto;
+    width: 100%;
+    padding: 0;
+    display: flex;
+
+    .title-text {
+      font-size: 34px;
+      text-align: left;
+      margin-left: 28px;
+      margin-top: 50px;
+      margin-bottom: 0;
+    }
+  }
+
+  .page-body {
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+
+    .page-content {
+      display: flex;
+      flex-flow: row wrap;
+
+      .page-header {
+        display: flex;
+        width: 100%;
+        height: 300px;
+        overflow: hidden;
+        position: relative;
+
+        .text-box {
+          width: 60%;
+          margin: 20px 0 20px 20px;
+          padding: 0 10px 10px 0;
+          display: flex;
+          flex-direction: column;
+
+          h4 {
+            font-weight: normal;
+            font-size: 1.5rem;
+            margin: 8px 0;
+          }
+
+          p {
+            align-items: center;
+            margin: auto;
+            font-size: 1.1em;
+          }
+        }
+
+        .img-box {
+          height: 100%;
+          width: 40%;
+          clip-path: polygon(140px 0, 100% 0, 100% 100%, 0 100%);
+          background-position: center;
+          background-size: cover;
+        }
+
+        @media (max-width: 1279px) {
+          .text-box {
+            width: 60%;
+          }
+
+          .img-box {
+            clip-path: polygon(140px 0, 100% 0, 100% 100%, 0 100%);
+            width: 40%;
+          }
+        }
+
+        @media (max-width: 880px) {
+          .text-box {
+            width: 100%;
+            margin: 20px;
+          }
+
+          .img-box {
+            display: none;
+          }
+        }
+      }
+
+      .footnote {
+        width: 100%;
+        text-align: center;
+
+        .footnote-text {
+          font-size: 0.7rem;
+          margin: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* --- CARD SHARED STYLES --- */
+.page-card {
+  height: 100%;
+
+  .card-content {
+    height: 100%;
+
+    .card-button {
+      height: 35px;
+      width: 100%;
+      display: block;
+      position: absolute;
+      bottom: 0;
+      margin: auto;
+      padding: 0;
+
+      &.disabled {
+        font-weight: 600;
+      }
+    }
+  }
+}

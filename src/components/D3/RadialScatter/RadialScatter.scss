@@ -1,0 +1,35 @@
+@import '../../../sharedStyles/ColorVars';
+
+#viz-title {
+  transform: translate(-5px, 0);
+}
+
+#viz-subtitle {
+  transform: translate(-5px, 10px);
+}
+
+.arc-text {
+  fill: $other-gray-color-3;
+  // fill: $primary-color;
+  // stroke: #b1b0ae;
+  user-select: none;
+  font-size: 10px;
+}
+
+// .data-circle,
+.arc-circle,
+.grid-line {
+  stroke: $other-gray-color-3;
+}
+
+.grid-circle {
+  stroke: $other-gray-color-3;
+  fill: none;
+}
+
+.grid-text {
+  fill: $other-gray-color-3;
+  // fill: $primary-color;
+  font-size: 10px;
+  user-select: none;
+}

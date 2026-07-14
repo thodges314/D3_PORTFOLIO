@@ -1,0 +1,86 @@
+@import '../../../sharedStyles/ColorVars';
+@import '../../../sharedStyles/FontVars';
+
+.scenarios-itemized-wrapper {
+  margin: 0 32px 30px;
+
+  h6 {
+    margin-bottom: 20px;
+  }
+
+  .scenarios-itemized-table {
+    min-height: 300px;
+    font-family: $font-stack;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+      color: $dial-text-color;
+      border-bottom: 1px solid $other-gray-color-4;
+
+      td,
+      th {
+        text-align: left;
+      }
+
+      th {
+        font-size: 14px;
+        padding-bottom: 10px;
+        text-align: center;
+        font-weight: 550;
+        border-bottom: 1px solid $other-gray-color-4;
+
+        &:first-of-type {
+          text-align: left;
+        }
+      }
+
+      .table-header-border {
+        border-right: 1px solid $other-gray-color-4;
+      }
+
+      td {
+        &.topology-name {
+          width: 25%;
+        }
+
+        &.bau-investment,
+        &.opt-spend,
+        &.investment-diff {
+          width: 12%;
+          padding: 3px 5px 3px 0;
+          text-align: right;
+          animation: fadeIn 0.25s forwards;
+          animation-delay: 0.25s;
+
+          &.investment-diff {
+            border-right: 1px solid $other-gray-color-4;
+          }
+
+          &:hover {
+            font-weight: 550;
+            cursor: default;
+            box-shadow: inset 0 0 0 50px rgba(250, 250, 250, 0.2);
+          }
+        }
+      }
+    }
+  }
+}
+
+div.tooltip.scenarios-itemized-tooltip {
+  width: 180px;
+  transform: translate(-80px, 0);
+  height: unset;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

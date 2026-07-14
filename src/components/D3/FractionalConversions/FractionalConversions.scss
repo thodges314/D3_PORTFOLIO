@@ -1,0 +1,35 @@
+@import '../../../sharedStyles/ColorVars';
+@import '../../../sharedStyles/FontVars';
+
+.fractional-conversions-wrapper {
+  margin: 0 20px;
+
+  svg.fractional-conversions-svg {
+    width: 100%;
+    height: 285px;
+    min-width: 364px;
+    overflow: visible;
+    padding-top: 35px;
+
+    path,
+    polygon {
+      fill: $background-color;
+      stroke: $background-color;
+      stroke-width: 3;
+    }
+
+    .xaxis-label {
+      font-size: 12px;
+      font-family: $font-stack;
+      text-transform: capitalize;
+      fill: $cool-gray-color;
+      text-anchor: end;
+    }
+
+    .bar-label {
+      font-size: 12px;
+      fill: $cool-gray-color;
+      text-anchor: start;
+    }
+  }
+}

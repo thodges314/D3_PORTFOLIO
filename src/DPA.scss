@@ -1,0 +1,50 @@
+.app-container {
+  width: 100%;
+  height: 100%;
+}
+
+.dark-mode-btn {
+  position: fixed !important;
+  left: 8px;
+  bottom: 8px;
+  z-index: 1000;
+  display: none !important;
+
+  .dark-mode-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+@media (min-width: 1921px) {
+  .app-container {
+    width: 1920px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.right-pane {
+  margin-left: 65px;
+  top: 0;
+  width: auto;
+  height: 100%;
+  overflow: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1281px) {
+  .right-pane {
+    margin-left: 260px;
+  }
+}
+@media (max-width: 1000px) {
+  .right-pane {
+    margin-left: 65px;
+  }
+}

@@ -1,0 +1,33 @@
+.table-header-container {
+  display: flex;
+  justify-content: space-between;
+  height: 56px;
+  align-items: center;
+  margin: 26px;
+
+  .table-header-item-container {
+    display: flex;
+    flex-direction: column;
+    min-width: 225px;
+
+    &.left {
+      margin-left: auto;
+    }
+
+    &.right {
+      margin-right: 25px;
+    }
+
+    .input-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      margin: 5px 0;
+    }
+
+    .search-input {
+      .search-icon {
+        width: 20px;
+      }
+    }
+  }
+}

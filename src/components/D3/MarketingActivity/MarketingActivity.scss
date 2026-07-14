@@ -1,0 +1,85 @@
+@import '../../../sharedStyles/ColorVars';
+@import '../../../sharedStyles/FontVars';
+
+.marketing-activity-wrapper {
+  margin: 0 20px 30px;
+
+  .marketing-activity-table {
+    margin-top: 30px;
+    min-height: 300px;
+    font-family: $font-stack;
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      color: $black-color;
+
+      td,
+      th {
+        font-size: 14px;
+        text-align: left;
+      }
+
+      th {
+        padding-bottom: 10px;
+        padding-top: 10px;
+      }
+
+      td {
+        &.borderTd,
+        &.barchart {
+          border-left: 1px solid $other-gray-color-4;
+        }
+
+        &.channelname,
+        .channelname-first {
+          padding: 4px 10px 4px 0;
+          font-size: 14px;
+          white-space: nowrap;
+          width: 30%;
+        }
+
+        &.barchart {
+          padding-left: 0;
+          width: 26.6%;
+        }
+
+        &.table-bottom-border {
+          border-left: 1px solid $other-gray-color-4;
+          height: 10px;
+        }
+
+        div {
+          &.bar-container {
+            height: 28px;
+            display: inline-block;
+          }
+
+          &.bar-label {
+            display: inline-block;
+            padding: 0 10px 0 3px;
+            font-size: 12px;
+            color: $cool-gray-color;
+            position: absolute;
+            margin-top: 7px;
+            cursor: default;
+          }
+        }
+      }
+
+      tr.channel-label {
+        td {
+          font-weight: bold;
+          text-transform: uppercase;
+          color: $cool-gray-color;
+          font-size: 12px;
+          padding: 0 10px 5px 0;
+        }
+
+        &.top-pad td {
+          padding: 14px 10px 12px 0;
+        }
+      }
+    }
+  }
+}

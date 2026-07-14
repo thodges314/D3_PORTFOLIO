@@ -1,0 +1,30 @@
+.show-more {
+  font-size: 10px;
+  width: 100%;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 5px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  .MuiButton-label {
+    font-size: 10px;
+  }
+
+  .close-icon {
+    font-size: 1.5rem;
+    align-self: flex-end;
+    margin: 10px;
+    cursor: pointer;
+  }
+}
+
+.MuiDialog-paperWidthXl {
+  width: 85%;
+  height: 85%;
+}

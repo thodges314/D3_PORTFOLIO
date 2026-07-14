@@ -1,0 +1,33 @@
+@import '../../../../sharedStyles/ColorVars';
+
+.relative-spend-table {
+  width: 100%;
+  color: $black-color;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+
+  th {
+    font-size: 12px;
+    padding-bottom: 5px;
+  }
+
+  .secondary-headers th {
+    font-weight: normal;
+    padding-bottom: 0;
+  }
+
+  td {
+    font-size: 10px;
+    box-shadow: 0 0 0 0.6px $other-gray-color;
+    text-align: right;
+    padding: 2px 6px;
+
+    &.thick-border {
+      border-right: 2px solid $black-color;
+    }
+
+    &.channel-name {
+      text-align: left;
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  padding: 10px;
+  left: -75px;
+  z-index: 802701;
+  opacity: 0;
+}
+
+.tooltip-paragraph {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+#tooltip-value {
+  margin: 0;
+  padding: 0;
+}
+
+.tooltip-index {
+  margin: 0;
+  padding: 0;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 330px;
+}

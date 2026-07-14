@@ -1,0 +1,65 @@
+.col-small {
+  width: 25%;
+  flex: 1 0 25%;
+}
+
+.col-small2 {
+  width: 33.3333%;
+  flex: 1 0 33.3333%;
+}
+
+.col-medium {
+  width: 50%;
+  flex: 1 0 50%;
+}
+
+.col-medium2 {
+  width: 66%;
+  flex: 1 0 66%;
+}
+
+.col-large {
+  width: 100%;
+  flex: 1 0 100%;
+}
+
+[class*='col-'] {
+  padding: 8px;
+  float: left;
+
+  &.height-unset div {
+    height: unset;
+  }
+}
+
+.card-element {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+@media only screen and (max-width: 1280px) {
+  .col-medium {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+
+  .col-small {
+    width: 33%;
+    flex: 1 0 33%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .col-small2 {
+    width: 50%;
+    flex: 1 0 50%;
+  }
+}
+
+@media only screen and (max-width: 688px) {
+  .col-small2 {
+    width: 100%;
+    flex: 1 0 100%;
+  }
+}

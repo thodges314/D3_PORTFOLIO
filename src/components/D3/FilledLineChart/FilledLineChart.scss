@@ -1,0 +1,58 @@
+@import '../../../sharedStyles/ColorVars';
+
+#viz-title {
+  margin-left: 25px;
+  margin-bottom: -10px;
+  font-size: 18px;
+}
+
+#viz-subtitle {
+  margin-left: 25px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+.axis-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+// .scatter-tick-text {
+//     fill: $other-gray-color-3;
+//     font-size: 0.9em;
+//   }
+
+.tick-line {
+  stroke: #c0c0bb;
+  opacity: 0.2;
+}
+
+.dark-tick-line {
+  stroke: $other-gray-color-3;
+  opacity: 0.8;
+}
+
+.x-axis-line {
+  stroke: $other-gray-color-3;
+  stroke-width: 2px;
+  opacity: 0.8;
+}
+
+.line {
+  fill: none;
+}
+
+.hover-dot {
+  r: 3;
+  stroke: $other-gray-color-3;
+  stroke-width: 1;
+  &:hover {
+    r: 8;
+  }
+}
+
+.d3-text-primary {
+  fill: $primary-color;
+  font-size: 14px;
+}

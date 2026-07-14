@@ -1,0 +1,51 @@
+@import '../../../sharedStyles/ColorVars';
+
+.scatter-circle {
+  opacity: 0.9;
+  stroke: #d3d1cf;
+  &:hover {
+    fill: $primary-color;
+  }
+}
+
+.chart-label text {
+  font-size: 1.4em;
+  font-family: sans-serif;
+}
+
+.scatter-tick-text {
+  fill: $other-gray-color-3;
+  font-size: 0.9em;
+}
+
+.scatter-tick-line {
+  stroke: #c0c0bb;
+  opacity: 0.2;
+}
+
+.axis-label {
+  font-size: 1em;
+}
+
+.circle-label {
+  font-size: 25px;
+  fill: $other-gray-color-3;
+}
+
+.ref-lines {
+  stroke: $other-gray-color-3;
+}
+
+.legend-text {
+  fill: $other-gray-color-3;
+  font-size: 0.8em;
+}
+
+.chart-label {
+  font-size: 0.9em;
+}
+
+.cell .label {
+  fill: $other-gray-color-3;
+  font-size: 0.5em;
+}

@@ -1,0 +1,86 @@
+@import "../../../sharedStyles/ColorVars";
+@import "../../../sharedStyles/FontVars";
+
+.dial-chart-container {
+  h2 {
+    color: $toned-blue;
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .chart-subtitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: $dial-text-color;
+    font-weight: bold;
+    white-space: pre;
+  }
+
+  .large-subtitle {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: $dial-text-color;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 250px;
+    line-height: 14px;
+    inline-size: 250px;
+    overflow: hidden;
+    overflow-wrap: break-word;
+  }
+
+  svg {
+    width: 175px;
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    font-family: $font-stack;
+
+    .border {
+      fill: $black-color;
+    }
+
+    .positive-mark {
+      fill: $primary-color-2;
+      fill: #f06f00;
+    }
+
+    .negative-mark {
+      fill: $primary-color-4;
+      fill: #3e92d6;
+    }
+
+    .percent-text {
+      text-anchor: middle;
+      font-size: 8px;
+      fill: $dial-text-color;
+    }
+
+    .percent-title {
+      text-anchor: middle;
+      fill: $dial-text-color;
+    }
+
+    .percent-subtitle-dollars-rendered {
+      text-anchor: middle;
+      font-weight: bold;
+      fill: $dial-text-color;
+    }
+
+    .percent-subtitle-per {
+      text-anchor: middle;
+      fill: $dial-text-color;
+    }
+
+    .percent-subtitle-conversion {
+      text-anchor: middle;
+      fill: $dial-text-color;
+    }
+
+    .background {
+      fill: $dial-background-color;
+    }
+  }
+}

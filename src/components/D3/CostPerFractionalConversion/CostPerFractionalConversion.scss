@@ -1,0 +1,57 @@
+@import '../../../sharedStyles/ColorVars';
+@import '../../../sharedStyles/FontVars';
+
+.lollipop-wrapper {
+  margin: 0 20px;
+
+  svg.lollipop-svg {
+    width: 100%;
+    height: 275px;
+    min-width: 364px;
+    overflow: visible;
+    padding-top: 45px;
+    font-size: 12px;
+
+    .tick {
+      font-size: 12px;
+      font-family: $font-stack;
+      text-transform: capitalize;
+      color: $cool-gray-color;
+      text-anchor: end;
+
+      text {
+        transform: rotate(-90deg) translate(0, -12px);
+      }
+
+      line {
+        display: none;
+      }
+    }
+
+    g.mark-container {
+      &:hover {
+        circle,
+        line {
+          opacity: 0.8;
+        }
+      }
+    }
+
+    .xaxis-label {
+      .domain {
+        display: none;
+      }
+    }
+
+    .circle-text {
+      font-size: 12px;
+      font-family: $font-stack;
+      fill: $cool-gray-color;
+      text-anchor: start;
+    }
+
+    .tooltip-trigger {
+      opacity: 0;
+    }
+  }
+}
