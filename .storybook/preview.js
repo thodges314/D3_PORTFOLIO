@@ -39,6 +39,25 @@ const preview = {
         date: /Date$/,
       },
     },
+    options: {
+      storySort: {
+        order: [
+          'Doughnut Chart',
+          'Spider Chart',
+          'Filled Line',
+          'Filled Line Multiple DPA',
+          'Diverging Index Bar',
+          'Diverging Index Bar Multi DPA',
+          'Scatterplot',
+          'RadialScatter',
+          'USStateMap',
+          'USDMAMap',
+          'ListViz',
+          'FullTableViz',
+          'build a story instructions',
+        ],
+      },
+    },
   },
 };
 
