@@ -7,26 +7,26 @@
 
 A collection of custom **D3.js data visualizations** built as React components for a production analytics platform. Each chart was built from scratch using D3 v7, with interactive tooltips, responsive sizing, animated transitions, and dark/light theming support.
 
-> **[View Live Demo →](#)** *(Update with your GitHub Pages URL after deploy)*
+> **[View Live Demo →](https://thodges314.github.io/D3_PORTFOLIO/)**
 
 ---
 
 ## Visualization Components
 
-| Component | Description |
-|-----------|-------------|
-| **Doughnut Chart** | Animated pie/doughnut with hover arc expansion and polyline labels |
-| **Spider / Radar Chart** | Radar plot with concentric grid rings, animated web fill, and interactive data points |
-| **Filled Line Chart** | Area chart with gradient fill, animated path drawing, and axis labels |
-| **Filled Line (Multi-Series)** | Multi-dataset comparison variant supporting 1–3 overlaid series |
-| **Diverging Index Bar** | Horizontal bar chart diverging from a center baseline (index = 100) |
-| **Diverging Bar (Multi-Series)** | Multi-dataset comparison variant with grouped bars |
-| **Scatterplot** | Clustered scatter visualization with color-coded groups and collision handling |
-| **Radial Scatter** | Complex radial layout with arc-based category labels, interactive dots, and focus/dim on hover |
-| **US State Map** | Choropleth map using GeoJSON with gradient color scale and SVG blur shadow |
-| **US DMA Map** | Designated Market Area (DMA) region choropleth variant |
-| **List Viz** | Ranked list visualization with inline index bar indicators |
-| **Full Table Viz** | Interactive data table with sorting, pagination, and conditional formatting |
+| Component                        | Description                                                                                    |
+| -------------------------------- | ---------------------------------------------------------------------------------------------- |
+| **Doughnut Chart**               | Animated pie/doughnut with hover arc expansion and polyline labels                             |
+| **Spider / Radar Chart**         | Radar plot with concentric grid rings, animated web fill, and interactive data points          |
+| **Filled Line Chart**            | Area chart with gradient fill, animated path drawing, and axis labels                          |
+| **Filled Line (Multi-Series)**   | Multi-dataset comparison variant supporting 1–3 overlaid series                                |
+| **Diverging Index Bar**          | Horizontal bar chart diverging from a center baseline (index = 100)                            |
+| **Diverging Bar (Multi-Series)** | Multi-dataset comparison variant with grouped bars                                             |
+| **Scatterplot**                  | Clustered scatter visualization with color-coded groups and collision handling                 |
+| **Radial Scatter**               | Complex radial layout with arc-based category labels, interactive dots, and focus/dim on hover |
+| **US State Map**                 | Choropleth map using GeoJSON with gradient color scale and SVG blur shadow                     |
+| **US DMA Map**                   | Designated Market Area (DMA) region choropleth variant                                         |
+| **List Viz**                     | Ranked list visualization with inline index bar indicators                                     |
+| **Full Table Viz**               | Interactive data table with sorting, pagination, and conditional formatting                    |
 
 ---
 
@@ -43,6 +43,7 @@ ToolTipContext.Provider (wraps app)
 ```
 
 This pattern means:
+
 - **One tooltip instance** for the entire app (no duplication)
 - **D3 manages tooltip positioning and content** via imperative ref calls
 - **Smooth D3 transitions** on show/hide (easeQuadIn/easeQuadOut)
@@ -52,6 +53,7 @@ This pattern means:
 ### Responsive Layout System
 
 Charts are wrapped in a `LayoutCard` component providing:
+
 - 5 responsive column widths: `small` (25%), `small2` (33%), `medium` (50%), `medium2` (66%), `large` (100%)
 - Breakpoint-based reflowing via CSS media queries
 - Material-UI Card elevation for depth
@@ -60,6 +62,7 @@ Charts are wrapped in a `LayoutCard` component providing:
 ### Theming
 
 Full light/dark mode support via Material-UI's `ThemeProvider`:
+
 - CSS class-based theming (`text-primary`, `bg-default`, `fill-primary`, etc.)
 - Theme-aware SVG fills and strokes
 - Coordinated color palettes between UI and D3
