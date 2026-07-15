@@ -7,7 +7,7 @@
 
 A collection of custom **D3.js data visualizations** built as React components for a production analytics platform. Each chart was built from scratch using D3 v7, with interactive tooltips, responsive sizing, animated transitions, and dark/light theming support.
 
-> **[View Live Demo →](https://thodges314.github.io/D3_PORTFOLIO/)**
+> **[View Live Demo → https://thodges314.github.io/D3_PORTFOLIO/](https://thodges314.github.io/D3_PORTFOLIO/)**
 
 ---
 
